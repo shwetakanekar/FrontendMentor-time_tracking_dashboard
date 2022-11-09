@@ -1,0 +1,134 @@
+main {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80vw;
+    height: 50vh;
+    margin: 20vh auto;
+    grid-auto-rows: 1fr;
+}
+
+main>div {
+    /* background-color: hsl(235, 46%, 20%); */
+    border-radius: 10px;
+}
+
+.user-card {
+    grid-row: 1 / span 2;
+    background-color: hsl(235, 46%, 20%);
+    /* border-radius: 10px; */
+}
+
+.user {
+    background-color: hsl(235, 45%, 61%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.user img {
+    width: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%)
+}
+
+.work-img {
+    background: url('../assets/images/icon-work.svg') no-repeat right;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.play {
+    background-color: hsl(195, 74%, 62%)
+}
+
+.play-img {
+    background: url('../assets/images/icon-play.svg') no-repeat right;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%)
+}
+
+.study-img {
+    background: url('../assets/images/icon-study.svg') no-repeat right;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%)
+}
+
+.exercise-img {
+    background: url('../assets/images/icon-exercise.svg') no-repeat right;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%)
+}
+
+.social-img {
+    background: url('../assets/images/icon-social.svg') no-repeat right;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.self-care-img {
+    background: url('../assets/images/icon-self-care.svg') no-repeat right;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.content {
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content p {
+    color: hsl(236, 100%, 87%);
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+.content h1 {
+    font-size: 2.6rem;
+}
+
+.options {
+    padding: 20px;
+}
+
+.options ul li {
+    list-style: none;
+    margin: 10px;
+    color: hsl(236, 100%, 87%);
+    cursor: pointer;
+}
+
+.activeOption {
+    color: white !important;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
