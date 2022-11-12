@@ -3,26 +3,22 @@ main {
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 80vw;
-    height: 50vh;
     margin: 20vh auto;
-    grid-auto-rows: 1fr;
 }
 
 main>div {
-    /* background-color: hsl(235, 46%, 20%); */
     border-radius: 10px;
 }
 
 .user-card {
     grid-row: 1 / span 2;
     background-color: hsl(235, 46%, 20%);
-    /* border-radius: 10px; */
 }
 
 .user {
     background-color: hsl(235, 45%, 61%);
     border-radius: 10px;
-    padding: 20px;
+    padding: 32px;
 }
 
 .user img {
@@ -112,13 +108,18 @@ h1 {
     font-size: 2.6rem;
 }
 
+.activity-card {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .options {
     padding: 20px;
 }
 
 .options ul li {
     list-style: none;
-    margin: 10px;
+    margin: 15px;
     color: hsl(236, 100%, 87%);
     cursor: pointer;
 }
@@ -131,4 +132,39 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-card {
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+        margin-top: 18px;
+    }
+
+    .options ul li {
+        display: inline-block;
+    }
+
+    .options ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .user {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 36px;
+    }
+
+    .user div {
+        margin-top: 0.4rem;
+    }
 }

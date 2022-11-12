@@ -2,8 +2,10 @@
   <div class="user-card">
     <div class="user">
       <img src="../assets/images/image-jeremy.png" alt="Jeremy's photo" />
-      <p>Report for</p>
-      <h1>Jeremy Robson</h1>
+      <div>
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
     </div>
     <div class="options">
       <ul>
@@ -22,15 +24,15 @@
           {{ item.title }}
           <span><img src="../assets/images/icon-ellipsis.svg" /></span>
         </div>
-        <div *ngIf="optionSelected === 'daily'">
+        <div class="activity-card" *ngIf="optionSelected === 'daily'">
           <h1>{{ item.timeframes.daily.current }}hrs</h1>
           <p>Yesterday - {{ item.timeframes.daily.previous }}hrs</p>
         </div>
-        <div *ngIf="optionSelected === 'weekly'">
+        <div class="activity-card" *ngIf="optionSelected === 'weekly'">
           <h1>{{ item.timeframes.weekly.current }}hrs</h1>
           <p>Last week - {{ item.timeframes.weekly.previous }}hrs</p>
         </div>
-        <div *ngIf="optionSelected === 'monthly'">
+        <div class="activity-card" *ngIf="optionSelected === 'monthly'">
           <h1>{{ item.timeframes.monthly.current }}hrs</h1>
           <p>Last month - {{ item.timeframes.monthly.previous }}hrs</p>
         </div>
